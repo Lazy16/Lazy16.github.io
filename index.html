@@ -10,8 +10,9 @@
     .navbar-toggler{border-style:none;}
     .navbar-toggler:focus{outline:0;}
     .navbar-brand{padding-left:0.75rem;}
+    .col-lg-4{display:none;}
     body {background-color:rgb(240, 240, 240); font-family:'Roboto';}
-    @media (min-width:992px) {.navbar-brand{padding-left:0;}}
+    @media (min-width:992px) {.navbar-brand{padding-left:0;} .col-lg-4{display:block;}}
   </style>
  </head>
  <body>
@@ -32,7 +33,7 @@
      </div>
    </nav>
 
-   <div class="container">
+   <!--<div class="container">
      <div class="card border-0 shadow my-5">
        <div class="card-body p-5">
          <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
@@ -42,8 +43,58 @@
          <p class="lead mb-0">You've reached the end!</p>
        </div>
      </div>
+   </div>-->
+
+   <div class="container">
+
+     <div class="row">
+
+       <div class="col-lg-8">
+
+         <!--<div class="card my-5">
+           <div class="card-footer text-muted">
+             Posted on January 1, 2017 by
+             <a href="#">Start Bootstrap</a>
+           </div>
+         </div>-->
+
+         <div class="card my-5">
+           <div class="card-footer text-muted">
+             <div id="disqus_thread"></div>
+              <script>
+                var disqus_config = function () {
+                  this.page.url = 'https://lazy16.github.io';
+                  this.page.identifier = 'lambo';
+                };
+
+                (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = 'https://lambo.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+                })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+           </div>
+         </div>
+
+       </div>
+
+       <div class="col-lg-4">
+
+         <div class="card my-5">
+           <div class="card-body">
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           </div>
+         </div>
+
+       </div>
+
+     </div>
+
    </div>
 
+   <script id="dsq-count-scr" src="//lambo.disqus.com/count.js" async></script>
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
